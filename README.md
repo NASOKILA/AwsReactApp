@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+House Shop
 
-In the project directory, you can run:
+Atanas Kambitov                                                                                   14/07/2018
 
-### `npm start`
+This is a simple shop application made with React.js where a registered user can buy a house online.
+There are three types of users.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Guest - A guest is a user who has not registered yet, he can only see the home page which is deferent for him.
+This user can also register and login.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Logged In User - This type of user is registered and he can not only see the home and about page in the application, he can logout, view houses details, review them and buy a house that he likes.
+This user can also see a list of his own orders made in the pass and review their details, in addition
+a logged In user can see a profile page containing his/her profile details.
 
-### `npm test`
+Admin – This type of user has the more credentials than the rest, he can not only perform the above described actions, but he can edit and delete houses.
+An Admin user can also view all orders from all users and review them together with the profile pages.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A house cannot be bought more than once.
+An admin cannot update an already bought house, but he can delete it.
+The app contains everything in the project assignment description.
 
-### `npm run build`
+Index page : https://nasokila.github.io/house-shop/	
+ 
+Login page : https://nasokila.github.io/house-shop/user/login
+ 
+Register page : https://nasokila.github.io/house-shop/user/register
+ 	
+About page : https://nasokila.github.io/house-shop/about
+ 
+Home Logged In page : https://nasokila.github.io/house-shop	
+Here we see all the houses (available or not) listed with pagination.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+House Details page : https://nasokila.github.io/house-shop/house/details/{houseId}	
+From this page, an admin user can Order, Edit or Delete the house.
+The Logged In user can only Order the house. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Confirm Order page : https://nasokila.github.io/house-shop/house/confirm-order/{houseId}
+After clicking on Order the user lands on this page which is for confirming that the details of the house is right.	
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Order Completed page : https://nasokila.github.io/house-shop/order/completed/{houseId}
+This is a confirmation page saying that the house was bought.
+The user can view it’s details or go back to the Home page.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+House Edit page : https://nasokila.github.io/house-shop/house/edit/{hoiseId}		
+On this page the admin user can update the house details.
+ 
+House Delete page : https://nasokila.github.io/house-shop/house/delete/{houseId}
+On this page the admin user can delete the house.
+ 
+Profile page : https://nasokila.github.io/house-shop/user/profile/:id
+This is the profile page of the current logged in user.
+The user has the option to update his/her profile details.
+ 
+Update Profile page : https://nasokila.github.io/house-shop/user/updateProfile/{userId}
+From this page the user can update the details of his own profile.
+ 
+My Orders page : https://nasokila.github.io/house-shop/order/my
+On this page the user sees a list of all the orders that he created and he can delete or see the details of every single one.
+ 
+Create House page : https://nasokila.github.io/house-shop/house/create	
+This is the page where the admin user can create a new house.
+ 
+All Orders page : https://nasokila.github.io/house-shop/order/all	
+Here the admin user can see all the orders from every user and he can delete or view the details of every one of them.
